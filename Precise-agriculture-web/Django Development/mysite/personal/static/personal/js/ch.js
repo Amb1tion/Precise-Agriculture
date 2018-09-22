@@ -1,19 +1,19 @@
 /**
  * Created by Gigabyte-Pc on 9/22/2018.
  */
-var endpoint = 'api/chart/data/'
-var defaultdata = []
-$.ajax({
-	method: "GET",
-	url : endpoint,
-	success: function(data){
-		console.log(data)
-	},
-	error : function(error_data){
-		console.log("error")
-		console.log(error_data)
-	}
-})
+///var endpoint = 'api/chart/data/'
+ var defaultdata = [12, 19, 3, 5, 2, 3]
+// $.ajax({
+// 	method: "GET",
+// 	url : endpoint,
+// 	success: function(data){
+// 		console.log(data)
+// 	},
+// 	error : function(error_data){
+// 		console.log("error")
+// 		console.log(error_data)
+// 	}
+// })
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
 	type: 'line',
